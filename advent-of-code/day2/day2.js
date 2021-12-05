@@ -1000,11 +1000,11 @@ down 7
 down 7
 forward 9`;
 
-type ob = {
-	key: string,
-	value: number
-}
-let parse = (str: string): ob => {
+// let ob = {
+// 	key: string,
+// 	value: number
+// }
+let parse = (str) => {
 	let obj = str.split(' ');
 	return {
 		key: obj[0],
@@ -1013,7 +1013,7 @@ let parse = (str: string): ob => {
 }
 let inputArr = input.split('\n').map(parse);
 
-let result1 = ():number => {
+let result1 = () => {
 	let hp = 0;
 	let dep = 0;
 	inputArr.forEach((el)=>{
@@ -1028,7 +1028,7 @@ let result1 = ():number => {
 	return hp*dep;
 }
 
-let result2 = ():number => {
+let result2 = () => {
 	let hp = 0;
 	let dep = 0;
 	let aim = 0;
